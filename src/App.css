@@ -1,0 +1,124 @@
+#root {
+  max-width: 1280px;
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+.main__header {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  height: 4.5rem;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header__nav {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 11rem;
+}
+
+@media only screen and (max-width: 1139px) {
+  .header__nav {
+    margin: 0 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .header__nav {
+    margin: 0 6rem;
+  }
+}
+
+.nav__h2 {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.nav__ul {
+  display: flex;
+}
+
+@media only screen and (max-width: 820px) {
+  .nav__ul {
+    display: none;
+  }
+}
+
+.nav__ul a {
+  color: #252525;
+  font-weight: 700;
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: color 0.1s ease;
+}
+
+.nav__menu {
+  display: none;
+  height: 50px;
+  width: 50px;
+}
+
+.nav__menu:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 820px) {
+  .nav__menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.div__menu--line1,
+.div__menu--line2,
+.div__menu--line3 {
+  background-color: #000;
+  border-radius: 10px;
+  height: 4px;
+  margin: 3px;
+  width: 32px;
+}
+
+.AnimateLine1 {
+  animation: flipBar1 0.5s forwards;
+}
+
+.AnimateLine2 {
+  animation: fadeBar2 0.5s forwards;
+}
+
+.AnimateLine3 {
+  animation: flipBar3 0.5s forwards;
+}
+
+@keyframes flipBar1 {
+  100% {
+    transform: rotate(45deg) translate(4px, 10px);
+  }
+}
+
+@keyframes fadeBar2 {
+  0% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+}
+
+@keyframes flipBar3 {
+  100% {
+    transform: rotate(-45deg) translate(4px, -10px);
+  }
+}
