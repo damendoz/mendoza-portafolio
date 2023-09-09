@@ -1,8 +1,15 @@
+/* eslint-disable react/no-unescaped-entities */
 //React
 import { useState } from 'react'
 
+//icons
+import 'boxicons'
+
 //css
 import './App.css'
+
+//components
+import { NavMobile } from './components/nav-mobile'
 
 function App() {
 
@@ -15,7 +22,6 @@ function App() {
   const line1 = menuOpen ? 'div__menu--line1 div__menu--line1 AnimateLine1' : 'div__menu--line1'
   const line2 = menuOpen ? 'div__menu--line1 div__menu--line1 AnimateLine2' : 'div__menu--line2'
   const line3 = menuOpen ? 'div__menu--line1 div__menu--line1 AnimateLine3' : 'div__menu--line3'
-
 
   return (
     <main className='app__main'>
@@ -35,7 +41,42 @@ function App() {
           </div>
         </nav>
       </header>
+      <NavMobile menuOpen={menuOpen} />
       <section className='app__section'>
+        <div className='section__div'>
+          <div className='div__presentation'>
+            <h1>
+              Front-End Web Developer.
+            </h1>
+            <p className='intro-p'>Hi, I'm
+              <span className='h1__span--name'> Daniel</span>
+              .
+              <br />
+              A passionate Developer from Venezuela.
+            </p>
+            <ul className='div__presentation--ul'>
+              <li><a href="https://www.linkedin.com/in/daniel-mendoza-985352246/">
+                <i className='bx bx-md bxl-linkedin-square'></i>
+              </a></li>
+              <li><a href="https://github.com/damendoz">
+                <i className='bx bx-md bxl-github'></i>
+              </a></li>
+            </ul>
+          </div>
+          <div className='section__div--img'></div>
+        </div>
+        <div className='section__div--skills'>
+          <div className='div__mySkills--title'>
+            <h3>My Skills</h3>
+          </div>
+          <div className='divv__mySkills--content'>
+            <div className='div__mySkills--a'></div>
+            <div className='div__mySkills--b'></div>
+            <div className='div__mySkills--c'></div>
+            <div className='div__mySkills--d'></div>
+            <div className='div__mySkills--e'></div>
+          </div>
+        </div>
       </section>
       <aside className='app__aside'>
       </aside>
