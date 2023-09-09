@@ -173,11 +173,10 @@
   padding: 11rem 11rem 6.5rem;
 }
 
-@media only screen and (max-width: 1139px) {
-  .app__section {
-    height: 100%;
-    padding: 6rem 1.5rem 1.5rem;
-  }
+.section__div,
+.app__section {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -185,10 +184,12 @@
     padding: 10.5rem 6rem 6rem;
   }
 }
-.section__div,
-.app__section {
-  display: flex;
-  justify-content: space-between;
+
+@media only screen and (max-width: 1139px) {
+  .app__section {
+    height: 100%;
+    padding: 6rem 1.5rem 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 1139px) {
@@ -199,7 +200,7 @@
   }
 }
 
-.div__presentation--title {
+/* .div__presentation--title {
   width: 33rem;
 }
 
@@ -207,7 +208,7 @@
   .div__presentation--title {
     width: 30rem;
   }
-}
+} */
 
 h1 {
   -webkit-text-fill-color: transparent;
@@ -364,5 +365,82 @@ h1 {
   .section__div--img {
     height: 18rem;
     width: 18rem;
+  }
+}
+
+.section__div--skills {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.divv__mySkills--content {
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 37rem;
+}
+
+@media only screen and (max-width: 670px) {
+  .divv__mySkills--content {
+    padding: 1.5rem;
+    width: 100%;
+  }
+}
+
+.div__mySkills--a {
+  background: url(/src/assets/js.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.div__mySkills--b {
+  background: url(/src/assets/react.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.div__mySkills--c {
+  background: url(/src/assets/typescript.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.div__mySkills--d {
+  background: url(/src/assets/php.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.div__mySkills--e {
+  background: url(/src/assets/css.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.div__mySkills--a,
+.div__mySkills--b,
+.div__mySkills--c,
+.div__mySkills--d,
+.div__mySkills--e {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .div__mySkills--a,
+  .div__mySkills--b,
+  .div__mySkills--c,
+  .div__mySkills--d,
+  .div__mySkills--e {
+    height: 1.5rem;
+    width: 1.5rem;
   }
 }

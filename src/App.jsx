@@ -45,7 +45,7 @@ function App() {
       <section className='app__section'>
         <div className='section__div'>
           <div className='div__presentation'>
-            <h1 className='div__presentation--title'>
+            <h1>
               Front-End Web Developer.
             </h1>
             <p className='intro-p'>Hi, I'm
@@ -64,6 +64,18 @@ function App() {
             </ul>
           </div>
           <div className='section__div--img'></div>
+        </div>
+        <div className='section__div--skills'>
+          <div className='div__mySkills--title'>
+            <h3>My Skills</h3>
+          </div>
+          <div className='divv__mySkills--content'>
+            <div className='div__mySkills--a'></div>
+            <div className='div__mySkills--b'></div>
+            <div className='div__mySkills--c'></div>
+            <div className='div__mySkills--d'></div>
+            <div className='div__mySkills--e'></div>
+          </div>
         </div>
       </section>
       <aside className='app__aside'>

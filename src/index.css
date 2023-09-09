@@ -1,17 +1,4 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #fff;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
   --purple: #5425b3;
   --blue: #1125da;
   --black: #252525;
@@ -27,7 +14,7 @@ body,
 html {
   color: #252525;
   color: var(--black);
-  /* font-family: Poppins, sans-serif; */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -42,14 +29,4 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
 }
