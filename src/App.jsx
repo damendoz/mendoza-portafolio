@@ -1,8 +1,15 @@
+/* eslint-disable react/no-unescaped-entities */
 //React
 import { useState } from 'react'
 
+//icons
+import 'boxicons'
+
 //css
 import './App.css'
+
+//components
+import { NavMobile } from './components/nav-mobile'
 
 function App() {
 
@@ -16,18 +23,16 @@ function App() {
   const line2 = menuOpen ? 'div__menu--line1 div__menu--line1 AnimateLine2' : 'div__menu--line2'
   const line3 = menuOpen ? 'div__menu--line1 div__menu--line1 AnimateLine3' : 'div__menu--line3'
 
-  const navMobile = menuOpen ? 'nav__mobile active' : 'nav__mobile'
-
   return (
     <main className='app__main'>
       <header className='main__header'>
         <nav className='header__nav'>
           <h2 className='nav__h2'>Dani-dev</h2>
           <ul className='nav__ul'>
-            <li><a href>HOME</a></li>
-            <li><a href>ABOUT</a></li>
-            <li><a href>PROJECTS</a></li>
-            <li><a href>CONTACT</a></li>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">CONTACT</a></li>
           </ul>
           <div className='nav__menu' onClick={HandleClickMenu}>
             <div className={line1}></div>
@@ -36,13 +41,30 @@ function App() {
           </div>
         </nav>
       </header>
-        <nav className={navMobile}>
-          <a href="#home">HOME</a>
-          <a href="#about">ABOUT</a>
-          <a href="#projects">PROJECTS</a>
-          <a href="#contact">CONTACT</a>
-        </nav>
+      <NavMobile menuOpen={menuOpen} />
       <section className='app__section'>
+        <div className='section__div'>
+          <div className='div__presentation'>
+            <h1 className='div__presentation--title'>
+              Front-End Web Developer.
+            </h1>
+            <p className='intro-p'>Hi, I'm
+              <span className='h1__span--name'> Daniel</span>
+              .
+              <br />
+              A passionate Developer from Venezuela.
+            </p>
+            <ul className='div__presentation--ul'>
+              <li><a href="https://www.linkedin.com/in/daniel-mendoza-985352246/">
+                <i className='bx bx-md bxl-linkedin-square'></i>
+              </a></li>
+              <li><a href="https://github.com/damendoz">
+                <i className='bx bx-md bxl-github'></i>
+              </a></li>
+            </ul>
+          </div>
+          <div className='section__div--img'></div>
+        </div>
       </section>
       <aside className='app__aside'>
       </aside>
