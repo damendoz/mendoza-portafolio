@@ -59,6 +59,11 @@
   transition: color 0.1s ease;
 }
 
+.nav__ul a:hover {
+  color: var(--purple);
+  cursor: pointer;
+}
+
 .nav__menu {
   display: none;
   height: 50px;
@@ -224,6 +229,13 @@ h1 {
   h1 {
     font-size: 3rem;
   }
+}
+
+.intro-p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 2rem 0 2.7rem;
+  width: 25rem;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -442,5 +454,338 @@ h1 {
   .div__mySkills--e {
     height: 1.5rem;
     width: 1.5rem;
+  }
+}
+
+.app__section--about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: #ededed;
+  padding: 6.5rem 11rem;
+}
+
+@media only screen and (max-width: 1400px) {
+  .app__section--about {
+    padding: 6rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .app__section--about {
+    padding: 6rem 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .app__section--about {
+    padding: 6.5rem 1.5rem;
+  }
+}
+
+.section__div--title {
+  color: var(--black);
+  margin-bottom: 3rem;
+}
+
+.section__div--title h2 {
+  border-bottom: 3px solid var(--purple);
+  font-size: 1.7rem;
+  margin: 0;
+  padding: 0 0 0.3rem;
+}
+
+.section__div--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1070px) {
+  .section__div--content {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+}
+
+.div__content--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  position: relative;
+  width: 60%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .div__content--text {
+    width: 37rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .div__content--text {
+    width: 100%;
+  }
+}
+
+.div__content--img {
+  /* background: url(/static/media/yoo.6991234….jpg); */
+  background-position-y: 21%;
+  background-size: cover;
+  border-radius: 50%;
+  height: 10rem;
+  position: absolute;
+  right: -4rem;
+  top: -4rem;
+  width: 10rem;
+}
+
+.div__content--img,
+.div__content--text {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1400px) {
+  .div__content--img {
+    height: 8rem;
+    margin: 0 0 1.5rem;
+    right: -3rem;
+    top: -3rem;
+    width: 8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .div__content--img {
+    height: 3rem;
+    right: 2rem;
+    top: 1rem;
+    width: 3rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .div__content--img {
+    right: 2rem;
+    top: 2rem;
+  }
+}
+
+.div__content--text h3 {
+  font-size: 1.9rem;
+  margin: 0 4rem 1rem 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .div__content--text h3 {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .div__content--text,
+  .div__content--text h3 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .div__content--text h3 {
+    margin-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .div__content--text h3 {
+    font-size: 1rem;
+    margin-right: 5rem;
+  }
+}
+
+.div__content--text p {
+  font-weight: 500;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .div__content--text p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .div__content--text p {
+    text-align: center;
+  }
+}
+
+.app_footer {
+  align-items: center;
+  background-color: #ededed;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 6.5rem;
+}
+
+.footer__div--container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 11rem 6.5rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 875px) {
+  .footer__div--container {
+    padding: 0 1.5rem 6.5rem;
+  }
+}
+
+.div__h2--title {
+  border-bottom: 3px solid var(--purple);
+  color: var(--purple);
+  font-size: 1.7rem;
+  margin: 0 0 3rem;
+  padding: 0 0 0.3rem;
+}
+
+@media only screen and (max-width: 572px) {
+  .div__h2--title {
+    font-size: 1.3rem;
+  }
+}
+
+.div__h2--subtitle {
+  font-size: 1rem;
+  margin: 0 0 2rem;
+  text-align: center;
+  width: 30rem;
+}
+
+@media only screen and (max-width: 572px) {
+  .div__h2--subtitle {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
+
+.div__contact--card {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 6rem;
+}
+
+@media only screen and (max-width: 572px) {
+  .div__contact--card {
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+.contact__card--link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__card--link a {
+  padding: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 572px) {
+  .contact__card--link a {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+}
+
+.bx-md {
+  font-size: 2.25rem !important;
+}
+
+.bxl-linkedin-square,
+.bxs-envelope,
+.bxs-phone {
+  color: var(--black);
+}
+
+@media only screen and (max-width: 572px) {
+  .bx {
+    padding: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.contact__card--link p {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media only screen and (max-width: 572px) {
+  .contact__card--link p {
+    font-size: 0.7rem;
+  }
+}
+
+.footer__div--footer {
+  align-items: center;
+  background: linear-gradient(to right, var(--black), var(--purple));
+  display: flex;
+  height: 6.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+  .footer__div--footer {
+    height: 5.5rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer__div--footer {
+    height: 4.5rem;
+  }
+}
+
+.footer__div--footer p {
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .footer__div--footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer__div--footer p {
+    font-size: 0.6rem;
   }
 }

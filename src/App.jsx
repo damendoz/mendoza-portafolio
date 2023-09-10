@@ -1,7 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-//React
-import { useState } from 'react'
-
 //icons
 import 'boxicons'
 
@@ -9,40 +6,17 @@ import 'boxicons'
 import './App.css'
 
 //components
-import { NavMobile } from './components/nav-mobile'
+// import { NavMobile } from './components/nav-mobile'
+import { NavPc } from './components/nav-pc'
 
 function App() {
 
-  const [menuOpen, setMenuOpen] = useState(false)
 
-  const HandleClickMenu = () => {
-    setMenuOpen(!menuOpen)
-  }
-
-  const line1 = menuOpen ? 'div__menu--line1 div__menu--line1 AnimateLine1' : 'div__menu--line1'
-  const line2 = menuOpen ? 'div__menu--line1 div__menu--line1 AnimateLine2' : 'div__menu--line2'
-  const line3 = menuOpen ? 'div__menu--line1 div__menu--line1 AnimateLine3' : 'div__menu--line3'
 
   return (
     <main className='app__main'>
-      <header className='main__header'>
-        <nav className='header__nav'>
-          <h2 className='nav__h2'>Dani-dev</h2>
-          <ul className='nav__ul'>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">PROJECTS</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-          <div className='nav__menu' onClick={HandleClickMenu}>
-            <div className={line1}></div>
-            <div className={line2}></div>
-            <div className={line3}></div>
-          </div>
-        </nav>
-      </header>
-      <NavMobile menuOpen={menuOpen} />
-      <section className='app__section'>
+      <NavPc />
+      <section id='home' className='app__section'>
         <div className='section__div'>
           <div className='div__presentation'>
             <h1>
@@ -78,9 +52,67 @@ function App() {
           </div>
         </div>
       </section>
-      <aside className='app__aside'>
-      </aside>
-      <footer className='app_footer'>
+      <section id='about' className='app__section--about'>
+        <div className='section__div--title'>
+          <h2>About Me</h2>
+        </div>
+        <div className='section__div--content'>
+          <div className='div__content--text'>
+            <div className='div__content--img'></div>
+            <h3>An enthusiast Web Developer 💻</h3>
+            <p>
+              As a Full-Stack Developer, I turn ideas into code. I am capable of handling any obstacles, challenges or problems. Being a focused and disciplined person make me a wise choice. Using React/Next for the Frontend and Node, Express and SQL/NoSQL databases for the Backend, I am able to make attractive, interactive, useful and professional websites.
+              In my free time, I love reading, going to the gym and trekking in the woods. I think being in peace with myself is a very important aspect when it comes to working in an efficient and tidy way.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id='projects' className='app__section--projects'>
+      </section>
+      <footer id='contact' className='app_footer'>
+        <div className='footer__div--container'>
+          <h2 className='div__h2--title'>Contact</h2>
+          <h3 className='div__h2--subtitle'>If you are intrested in hiring me,
+            call me, email me or connect and chat with me via LinkedIn!</h3>
+          <div className='div__contact--card'>
+            <div className='contact__card--link'><a
+              href="tel:+584129042208"
+              rel='noreferrer'
+              target='_blank'
+            >
+              <i className='bx bx-md bxs-phone'></i>
+            </a>
+              <p>
+                +58 412 904 2208
+              </p>
+            </div>
+            <div className='contact__card--link'><a
+              href="mailto: ing.dan.mendoza@gmail.com"
+              rel='noreferrer'
+              target='_blank'
+            >
+              <i className='bx bx-md bxs-envelope'></i>
+            </a>
+              <p>
+                ing.dan.mendoza@gmail.com
+              </p>
+            </div>
+            <div className='contact__card--link'><a
+              href="https://www.linkedin.com/in/daniel-mendoza-985352246/"
+              rel='noreferrer'
+              target='_blank'
+            >
+              <i className='bx bx-md bxl-linkedin-square'></i>
+            </a>
+              <p>
+                Daniel Mendoza
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className='footer__div--footer'>
+          <p>© 2023 Created by Daniel Mendoza | All rights reserved.</p>
+        </div>
       </footer>
     </main>
   )
