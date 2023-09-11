@@ -416,12 +416,6 @@ h1 {
 }
 
 .div__mySkills--d {
-  background: url(/src/assets/php.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.div__mySkills--e {
   background: url(/src/assets/css.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -779,3 +773,13 @@ h1 {
     font-size: 0.6rem;
   }
 }
+
+.div__h2--subtitle span {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.div__content--text p span {
+  color: var(--purple);
+  font-weight: 700;
+}	

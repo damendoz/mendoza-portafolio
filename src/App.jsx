@@ -21,7 +21,7 @@ function App() {
               Front-End Web Developer.
             </h1>
             <p className='intro-p'>Hi, I'm
-              <span className='h1__span--name'> Daniel</span>
+              <span className='h1__span--name'> Daniel Mendoza</span>
               .
               <br />
               A passionate Developer from Venezuela.
@@ -46,7 +46,6 @@ function App() {
             <div className='div__mySkills--b'></div>
             <div className='div__mySkills--c'></div>
             <div className='div__mySkills--d'></div>
-            <div className='div__mySkills--e'></div>
           </div>
         </div>
       </section>
@@ -59,8 +58,12 @@ function App() {
             <div className='div__content--img'></div>
             <h3>An enthusiast Web Developer 💻</h3>
             <p>
-              As a Full-Stack Developer, I turn ideas into code. I am capable of handling any obstacles, challenges or problems. Being a focused and disciplined person make me a wise choice. Using React/Next for the Frontend and Node, Express and SQL/NoSQL databases for the Backend, I am able to make attractive, interactive, useful and professional websites.
-              In my free time, I love reading, going to the gym and trekking in the woods. I think being in peace with myself is a very important aspect when it comes to working in an efficient and tidy way.
+              As a <span>Front-End</span> Developer, I turn <span>ideas</span> into <span>code</span>. I am capable of handling any obstacles,
+              challenges or problems.
+              Being a focused and disciplined person make me a wise choice. Using <span>React/Next</span> for the Frontend,
+              i can able to make attractive, interactive, useful and <span>professional</span> websites.
+              I think being in peace with myself is a very important aspect when it comes to <span>working</span> in an
+              efficient and tidy way.
             </p>
           </div>
         </div>
@@ -70,8 +73,11 @@ function App() {
       <footer id='contact' className='app_footer'>
         <div className='footer__div--container'>
           <h2 className='div__h2--title'>Contact</h2>
-          <h3 className='div__h2--subtitle'>If you are intrested in hiring me,
-            call me, email me or connect and chat with me via LinkedIn!</h3>
+          <h3 className='div__h2--subtitle'>If you are intrested in
+            <span> hiring</span> me,
+            <span> call</span> me, <span>email</span> me
+            or <span>connect </span>
+            and chat with me via LinkedIn!</h3>
           <div className='div__contact--card'>
             <div className='contact__card--link'><a
               href="tel:+584129042208"
