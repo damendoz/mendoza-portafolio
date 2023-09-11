@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 //icons
 import 'boxicons'
 
@@ -6,7 +5,6 @@ import 'boxicons'
 import './App.css'
 
 //components
-// import { NavMobile } from './components/nav-mobile'
 import { NavPc } from './components/nav-pc'
 
 function App() {

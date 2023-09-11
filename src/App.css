@@ -205,16 +205,6 @@
   }
 }
 
-/* .div__presentation--title {
-  width: 33rem;
-}
-
-@media only screen and (max-width: 1300px) {
-  .div__presentation--title {
-    width: 30rem;
-  }
-} */
-
 h1 {
   -webkit-text-fill-color: transparent;
   background: linear-gradient(to right, var(--black), var(--purple));
@@ -537,7 +527,7 @@ h1 {
 }
 
 .div__content--img {
-  /* background: url(/static/media/yoo.6991234….jpg); */
+  background: url(/src/assets/photo_title.jpg);
   background-position-y: 21%;
   background-size: cover;
   border-radius: 50%;
