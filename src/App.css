@@ -401,24 +401,75 @@ h1 {
   background: url(/src/assets/js.png);
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 10px;
+}
+
+.div__mySkills--a:hover {
+  border-radius: 10px;
+
+  transition: 0.5s;
+  box-shadow: 0 0 5px var(--js), 0 0 10px var(--js), 0 0 15px var(--js),
+    0 0 20px var(--js), 0 0 25px var(--js), 0 0 50px var(--js),
+    0 0 200px var(--js);
 }
 
 .div__mySkills--b {
-  background: url(/src/assets/react.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0);
+  --color: #61dafb;
+  color: var(--color);
+  font-size: 2.5rem;
+}
+
+.div__mySkills--b:hover {
+  background: var(--color);
+  box-shadow: 0 0 5px var(--color), 0 0 25px var(--color), 0 0 50px var(--color),
+    0 0 200px var(--color);
+  transition: 0.5s;
+}
+
+.div__mySkills--b i:hover {
+  color: #fff !important;
 }
 
 .div__mySkills--c {
   background: url(/src/assets/typescript.png);
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 10px;
+}
+
+.div__mySkills--c:hover {
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 0 0 5px var(--typescript), 0 0 10px var(--typescript),
+    0 0 15px var(--typescript), 0 0 20px var(--typescript),
+    0 0 25px var(--typescript), 0 0 50px var(--typescript),
+    0 0 200px var(--typescript);
 }
 
 .div__mySkills--d {
-  background: url(/src/assets/css.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0);
+  font-size: 2.5rem;
+}
+
+.div__mySkills--d:hover {
+  --bcss: rgb(24, 49, 83, 1);
+  background: var(--bcss);
+  box-shadow: 0 0 5px var(--bcss), 0 0 25px var(--bcss), 0 0 50px var(--bcss),
+    0 0 200px var(--bcss);
+  transition: 0.5s;
 }
 
 .div__mySkills--e {
@@ -427,13 +478,25 @@ h1 {
   background-size: contain;
 }
 
+.div__mySkills--e:hover {
+  background: url(/src/assets/phpwhite.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  --bcss: rgb(24, 49, 83, 1);
+  background-color: var(--bcss);
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 0 0 5px var(--bcss), 0 0 25px var(--bcss), 0 0 50px var(--bcss),
+    0 0 200px var(--bcss);
+}
+
 .div__mySkills--a,
 .div__mySkills--b,
 .div__mySkills--c,
 .div__mySkills--d,
 .div__mySkills--e {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 @media only screen and (max-width: 500px) {
@@ -788,4 +851,174 @@ h1 {
 .div__content--text p span {
   color: var(--purple);
   font-weight: 700;
-}	
+}
+
+.app__section--projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 6.5rem 11rem;
+  background-color: #f7f7f7;
+}
+
+.div__projects--title h2 {
+  border-bottom: 3px solid var(--purple);
+  font-size: 1.7rem;
+  margin: 0;
+  padding: 0 0 0.3rem;
+  margin-bottom: 3rem;
+}
+
+.div__projects--cards-container {
+  grid-gap: 3rem;
+  box-sizing: border-box;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows:
+    minmax(0, 1fr)
+    minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.div__projects--contain {
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.project--1 {
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.top {
+  text-align: center;
+}
+
+.top p {
+  font-weight: 500;
+}
+
+.project--title {
+  font-size: 1.7rem;
+  margin: 0 0 1rem;
+}
+
+.project--description {
+  margin: 0;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom > h3 {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.project--skills {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.skill--1,
+.skill--2,
+.skill--3,
+.skill--4 {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.skill--1 {
+  background: url(/src/assets/js.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.skill--2 {
+  background: url(/src/assets/react.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.skill--3 {
+  background: url(/src/assets/css.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.skill--4 {
+  background: url(/src/assets/laravel.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.img-proyect-1,
+.img-proyect-2,
+.img-proyect-3,
+.img-proyect-4 {
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  height: 15rem;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  width: 25rem;
+}
+
+.img-proyect-1 {
+  background: url(/src/assets/project1.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project--liks {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.proyect--links a {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 1rem 0;
+  text-decoration: none;
+}
+
+.bx-globe {
+  color: var(--black);
+  transition: color 0.1s ease;
+}

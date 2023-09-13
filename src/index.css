@@ -2,6 +2,13 @@
   --purple: #5425b3;
   --blue: #1125da;
   --black: #252525;
+  --js: #ffd600;
+  --react: #61dafb;
+  --typescript: #1976d2;
+  --css: #2965f1;
+  --laravel: #f55247;
+  --php: #000000;
+  --colorcss: #1720fd;
 }
 
 a {

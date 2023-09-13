@@ -43,10 +43,15 @@ function App() {
           </div>
           <div className='divv__mySkills--content'>
             <div className='div__mySkills--a'></div>
-            <div className='div__mySkills--b'></div>
+            <div className='div__mySkills--b'>
+              <i className='bx bxl-react' style={{ color: '#61dafb' }}  ></i>
+            </div>
             <div className='div__mySkills--c'></div>
-            <div className='div__mySkills--d'></div>
+            <div className='div__mySkills--d'>
+              <i className='bx bxl-css3' style={{ color: '#1720fd' }}  ></i>
+            </div>
             <div className='div__mySkills--e'></div>
+
 
           </div>
         </div>
@@ -71,6 +76,47 @@ function App() {
         </div>
       </section>
       <section id='projects' className='app__section--projects'>
+        <div className='div__projects--title'>
+          <h2>Projects</h2>
+        </div>
+        <div className='div__projects--cards-container'>
+          <div className='div__projects--contain project--1'>
+            <div className='left'>
+              <div className='top'>
+                <h3 className='project--title'>Travel Self-Management System</h3>
+                <p className='project--description'>
+                  Administrative self-management system for a
+                  company's per diem.</p>
+              </div>
+              <div className='bottom'>
+                <h3>Tech used</h3>
+                <div className='project--skills'>
+                  <div className='skill--1'></div>
+                  <div className='skill--2'></div>
+                  <div className='skill--3'></div>
+                  <div className='skill--4'></div>
+                </div>
+              </div>
+            </div>
+            <div className='right'>
+              <a className='img-link'
+                href="https://mendoza-porfolio.netlify.app/"
+                target='_blank' rel='noreferrer'>
+                <div className='img-proyect-1'></div>
+              </a>
+              <div className='project--liks'>
+                <a href="https://mendoza-porfolio.netlify.app/" target="_blank"
+                  rel="noreferrer">
+                  <i className='bx bx-sm bx-globe'></i>
+                </a>
+                <a href="https://github.com/damendoz" target="_blank"
+                  rel="noreferrer">
+                  <i className='bx bx-sm bxl-github'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <footer id='contact' className='app_footer'>
         <div className='footer__div--container'>
