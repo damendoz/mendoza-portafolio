@@ -27,7 +27,7 @@ function App() {
               A passionate Developer from Venezuela.
             </p>
             <ul className='div__presentation--ul'>
-              <li><a href="https://www.linkedin.com/in/daniel-mendoza-985352246/">
+              <li><a href="https://www.linkedin.com/in/daniel-mendoza-299a06167">
                 <i className='bx bx-md bxl-linkedin-square'></i>
               </a></li>
               <li><a href="https://github.com/damendoz">
@@ -104,7 +104,7 @@ function App() {
               </p>
             </div>
             <div className='contact__card--link'><a
-              href="https://www.linkedin.com/in/daniel-mendoza-985352246/"
+              href="https://www.linkedin.com/in/daniel-mendoza-299a06167"
               rel='noreferrer'
               target='_blank'
             >
