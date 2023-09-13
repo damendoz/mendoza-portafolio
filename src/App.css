@@ -421,6 +421,12 @@ h1 {
   background-size: contain;
 }
 
+.div__mySkills--e {
+  background: url(/src/assets/php.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .div__mySkills--a,
 .div__mySkills--b,
 .div__mySkills--c,

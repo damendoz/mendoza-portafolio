@@ -46,6 +46,8 @@ function App() {
             <div className='div__mySkills--b'></div>
             <div className='div__mySkills--c'></div>
             <div className='div__mySkills--d'></div>
+            <div className='div__mySkills--e'></div>
+
           </div>
         </div>
       </section>
