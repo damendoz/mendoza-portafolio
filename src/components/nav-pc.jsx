@@ -89,7 +89,7 @@ export function NavPc() {
                 <ul className='nav__ul'>
                     <li><a href="#home" className={redirectedHome} onClick={HandleClicRedirectHome}>HOME</a></li>
                     <li><a href="#about" className={redirectedAbout} onClick={HandleClicRedirectAbout}>ABOUT</a></li>
-                    {/* <li><a href="#projects" className={redirectedProjects} onClick={HandleClicRedirectProjects}>PROJECTS</a></li> */}
+                    <li><a href="#projects" className={redirectedProjects} onClick={HandleClicRedirectProjects}>PROJECTS</a></li>
                     <li><a href="#contact" className={redirectedContact} onClick={HandleClicRedirectContact}>CONTACT</a></li>
                 </ul>
                 <div className='nav__menu' onClick={HandleClickMenu}>

@@ -60,7 +60,7 @@
 }
 
 .nav__ul a:hover {
-  color: var(--purple);
+  background-color: rgba(237, 237, 237, 0.5);
   cursor: pointer;
 }
 
@@ -287,6 +287,11 @@ h1 {
   padding: 0;
 }
 
+.div__presentation--ul li:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
 @media only screen and (max-width: 1139px) {
   .div__presentation--ul {
     justify-content: center;
@@ -333,7 +338,9 @@ h1 {
 }
 
 .bxl-github:hover,
-.bxl-linkedin-square:hover {
+.bxl-linkedin-square:hover,
+.bxs-envelope:hover,
+.bxs-phone:hover {
   color: var(--purple);
 }
 
@@ -473,7 +480,7 @@ h1 {
 }
 
 .div__mySkills--e {
-  background: url(/src/assets/php.png);
+  background: url(/src/assets/php-logo.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -877,9 +884,13 @@ h1 {
   display: grid;
   gap: 3rem;
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows:
+  grid-template-rows: minmax(
+    0,
+    1fr
+  ); /* cuando haya mas proyectos aumentar esto como esta abajo */
+  /* grid-template-rows:
     minmax(0, 1fr)
-    minmax(0, 1fr) minmax(0, 1fr);
+    minmax(0, 1fr) minmax(0, 1fr); */
 }
 
 .div__projects--contain {
@@ -978,7 +989,6 @@ h1 {
 a:-webkit-any-link {
   color: -webkit-link;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .img-proyect-1,
@@ -1002,6 +1012,11 @@ a:-webkit-any-link {
   background-size: cover;
 }
 
+.img-proyect-1:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
 .project--liks {
   display: flex;
   justify-content: center;
@@ -1021,4 +1036,9 @@ a:-webkit-any-link {
 .bx-globe {
   color: var(--black);
   transition: color 0.1s ease;
+}
+
+.project--liks i:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
