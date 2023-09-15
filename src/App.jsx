@@ -1,3 +1,4 @@
+import { useState } from 'react'
 //icons
 import 'boxicons'
 
@@ -6,16 +7,25 @@ import './App.css'
 
 //components
 import { NavPc } from './components/nav-pc'
+import { DarkMode } from './components/dark-mode'
 
 function App() {
 
+  const [darkModeActive, setDarkModeActive] = useState(false)
 
+  const classNameFirstSection = darkModeActive ? 'app__section dark__mode--ligth' : 'app__section'
+
+  const classNameAbout = darkModeActive ? 'app__section--about dark__mode' : 'app__section--about'
+
+  const classNameProjects = darkModeActive ? 'app__section--projects dark__mode--ligth' : 'app__section--projects'
+
+  const classNameContact = darkModeActive ? 'app_footer dark__mode' : 'app_footer'
 
   return (
     <main className='app__main'>
-      <NavPc />
-      <section id='home' className='app__section'>
-        <div className='section__div'>
+      <NavPc darkModeActive={darkModeActive} />
+      <section id='home' className={classNameFirstSection}>
+        <div className='section__div' >
           <div className='div__presentation'>
             <h1>
               Front-End Web Developer.
@@ -56,7 +66,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section id='about' className='app__section--about'>
+      <section id='about' className={classNameAbout}>
         <div className='section__div--title'>
           <h2>About Me</h2>
         </div>
@@ -75,7 +85,7 @@ function App() {
           </div>
         </div>
       </section>
-      <section id='projects' className='app__section--projects'>
+      <section id='projects' className={classNameProjects}>
         <div className='div__projects--title'>
           <h2>Projects</h2>
         </div>
@@ -117,8 +127,9 @@ function App() {
             </div>
           </div>
         </div>
+        <DarkMode darkModeActive={darkModeActive} setDarkModeActive={setDarkModeActive} />
       </section>
-      <footer id='contact' className='app_footer'>
+      <footer id='contact' className={classNameContact}>
         <div className='footer__div--container'>
           <h2 className='div__h2--title'>Contact</h2>
           <h3 className='div__h2--subtitle'>If you are intrested in

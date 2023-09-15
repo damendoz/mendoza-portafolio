@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import { NavMobile } from "./nav-mobile"
 
-export function NavPc() {
+export function NavPc({ darkModeActive}) {
 
     const [menuOpen, setMenuOpen] = useState(false)
 
@@ -82,8 +82,10 @@ export function NavPc() {
     const redirectedProjects = projects ? 'active' : null
     const redirectedContact = contact ? 'active' : null
 
+    const classNameNav = darkModeActive ? 'main__header dark__mode--ligth' : 'main__header'
+
     return (
-        <header className='main__header'>
+        <header className={classNameNav}>
             <nav className='header__nav'>
                 <h2 className='nav__h2'>Dani-dev</h2>
                 <ul className='nav__ul'>

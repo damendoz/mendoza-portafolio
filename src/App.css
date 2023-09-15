@@ -1,3 +1,7 @@
+.app__main .prueba {
+  padding: 10rem;
+}
+
 .main__header {
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
@@ -1041,4 +1045,95 @@ a:-webkit-any-link {
 .project--liks i:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease;
+}
+
+/* Button for Dark Mode */
+
+.div__dark-mode--toggle {
+  display: block;
+  position: fixed !important;
+  box-sizing: border-box;
+  bottom: 0;
+  right: 0;
+  margin-right: 1rem !important;
+  margin-bottom: 1rem !important;
+  z-index: 1500;
+}
+
+.dark-mode__toggle--circle {
+  background-color: var(--purple);
+  display: flex;
+  height: 42px;
+  width: 54px;
+  border-radius: 20%;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode__toggle--circle .bxs-sun {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+.dark-mode__toggle--circle .bxs-moon {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+.dark-mode__toggle--circle .bxs-down-arrow {
+  color: #fff;
+  font-size: 0.49rem;
+  margin: auto;
+}
+
+.dark-mode__toggle--ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+  transform: translate(0, -44px);
+  inset: auto 0px 0px auto;
+  margin: 0 0 0.3rem 0;
+}
+
+.dark-mode__toggle--ul li:hover {
+  cursor: pointer;
+}
+
+.dark-mode__toggle--ul i {
+  margin: 0.5rem 1rem;
+  font-size: 1.2rem;
+  opacity: 0.5;
+}
+
+.active__DarkMode {
+  display: block;
+}
+
+/* Dark Mode */
+
+.dark__mode {
+  background-color: #121212;
+}
+
+.dark__mode--ligth {
+  background-color: #131313e1;
+}
+
+.dark__mode--on {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.dark__mode--on li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark__mode--of li:hover {
+  background-color: #ddd8d8;
 }
