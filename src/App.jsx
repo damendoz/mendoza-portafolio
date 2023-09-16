@@ -114,7 +114,7 @@ function App() {
                 target='_blank' rel='noreferrer'>
                 <div className='img-proyect-1'></div>
               </a>
-              <div className='project--liks'>
+              <div className='project--links'>
                 <a href="https://mendoza-porfolio.netlify.app/" target="_blank"
                   rel="noreferrer">
                   <i className='bx bx-sm bx-globe'></i>

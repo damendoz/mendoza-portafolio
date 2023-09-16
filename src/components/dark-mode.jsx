@@ -15,10 +15,12 @@ export function DarkMode({ darkModeActive, setDarkModeActive }) {
 
     const HandleClicDarkMode = () => {
         setDarkModeActive(true)
+        setActive(!active)
     }
 
     const HandleClickDarkModeOff = () => {
         setDarkModeActive(false)
+        setActive(!active)
     }
 
 
