@@ -328,7 +328,8 @@ h1 {
 }
 
 .bxl-github,
-.bxl-linkedin-square {
+.bxl-linkedin-square,
+.bx-globe {
   color: var(--black);
   transition: color 0.1s ease;
 }
@@ -344,7 +345,8 @@ h1 {
 .bxl-github:hover,
 .bxl-linkedin-square:hover,
 .bxs-envelope:hover,
-.bxs-phone:hover {
+.bxs-phone:hover,
+.bx-globe:hover {
   color: var(--purple);
 }
 
@@ -1012,10 +1014,7 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
-.bx-globe {
-  color: var(--black);
-  transition: color 0.1s ease;
-}
+
 
 .project--links i:hover {
   transform: scale(1.2);
