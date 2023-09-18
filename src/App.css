@@ -964,7 +964,7 @@ a:-webkit-any-link {
 
 .img-proyect-1 {
   background: url(/src/assets/projectITBC.PNG);
-  background-position: 50%;
+  background-position: 0%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -990,7 +990,7 @@ a:-webkit-any-link {
   .img-proyect-2,
   .img-proyect-3,
   .img-proyect-4 {
-    background-position: 30%;
+    background-position: 0%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 9rem;
