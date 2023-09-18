@@ -391,7 +391,7 @@ h1 {
   margin: 0;
 }
 
-.divv__mySkills--content {
+.div__mySkills--content {
   background-color: #fff;
   border-radius: 2rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -404,7 +404,7 @@ h1 {
 }
 
 @media only screen and (max-width: 670px) {
-  .divv__mySkills--content {
+  .div__mySkills--content {
     padding: 1.5rem;
     width: 100%;
   }
@@ -419,7 +419,6 @@ h1 {
 
 .div__mySkills--a:hover {
   border-radius: 10px;
-
   transition: 0.5s;
   box-shadow: 0 0 5px var(--js), 0 0 10px var(--js), 0 0 15px var(--js),
     0 0 20px var(--js), 0 0 25px var(--js), 0 0 50px var(--js),
@@ -458,8 +457,8 @@ h1 {
 }
 
 .div__mySkills--c:hover {
-  transition: 0.5s;
   border-radius: 10px;
+  transition: 0.5s;
   box-shadow: 0 0 5px var(--typescript), 0 0 10px var(--typescript),
     0 0 15px var(--typescript), 0 0 20px var(--typescript),
     0 0 25px var(--typescript), 0 0 50px var(--typescript),
@@ -480,7 +479,8 @@ h1 {
 .div__mySkills--d:hover {
   --bcss: rgb(24, 49, 83, 1);
   background: var(--bcss);
-  box-shadow: 0 0 5px var(--bcss), 0 0 25px var(--bcss), 0 0 50px var(--bcss),
+  box-shadow: 0 0 5px var(--bcss), 0 0 10px var(--bcss), 0 0 15px var(--bcss),
+    0 0 20px var(--bcss), 0 0 25px var(--bcss), 0 0 50px var(--bcss),
     0 0 200px var(--bcss);
   transition: 0.5s;
 }
@@ -499,7 +499,9 @@ h1 {
   background-color: var(--bcss);
   transition: 0.5s;
   border-radius: 10px;
-  box-shadow: 0 0 5px var(--bcss), 0 0 25px var(--bcss), 0 0 50px var(--bcss),
+  box-shadow: 0 0 5px var(--bcss),0 0 10px var(--bcss),
+  0 0 15px var(--bcss),0 0 20px var(--bcss),
+   0 0 25px var(--bcss), 0 0 50px var(--bcss),
     0 0 200px var(--bcss);
 }
 
@@ -1014,8 +1016,6 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
-
-
 .project--links i:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease;
@@ -1280,4 +1280,27 @@ a:-webkit-any-link {
 
 .dark__mode--of li:hover {
   background-color: #ddd8d8;
+}
+
+.dark__mode--h1-on {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, var(--purple), var(--purple));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.dark__mode--p-on {
+  color: #fff;
+}
+
+.dark__mode--ul-on i {
+  color: #fff;
+}
+
+.dark__mode--h3-on {
+  color: #fff;
+}
+
+.dark__mode--mySkills-content-on {
+  background-color: #121212;
 }

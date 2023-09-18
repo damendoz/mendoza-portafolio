@@ -9,6 +9,7 @@ import './App.css'
 import { NavPc } from './components/nav-pc'
 import { DarkMode } from './components/dark-mode'
 
+
 function App() {
 
   const [darkModeActive, setDarkModeActive] = useState(false)
@@ -21,22 +22,32 @@ function App() {
 
   const classNameContact = darkModeActive ? 'app_footer dark__mode' : 'app_footer'
 
+  const classNameH1 = darkModeActive ? 'dark__mode--h1-on' : null
+
+  const classNameP = darkModeActive ? 'intro-p dark__mode--p-on' : 'intro-p'
+
+  const classNameUl = darkModeActive ? 'div__presentation--ul dark__mode--ul-on' : 'div__presentation--ul'
+
+  const classNameH3 = darkModeActive ? 'dark__mode--h3-on' : null
+
+  const classNameMySkillsContent = darkModeActive ? 'div__mySkills--content dark__mode--mySkills-content-on' : 'div__mySkills--content'
+
   return (
     <main className='app__main'>
       <NavPc darkModeActive={darkModeActive} />
       <section id='home' className={classNameFirstSection}>
         <div className='section__div' >
           <div className='div__presentation'>
-            <h1>
+            <h1 className={classNameH1}>
               Front-End Web Developer.
             </h1>
-            <p className='intro-p'>Hi, I'm
+            <p className={classNameP}>Hi, I'm
               <span className='h1__span--name'> Daniel Mendoza</span>
               .
               <br />
               A passionate Developer from Venezuela.
             </p>
-            <ul className='div__presentation--ul'>
+            <ul className={classNameUl}>
               <li><a href="https://www.linkedin.com/in/daniel-mendoza-299a06167">
                 <i className='bx bx-md bxl-linkedin-square'></i>
               </a></li>
@@ -49,9 +60,9 @@ function App() {
         </div>
         <div className='section__div--skills'>
           <div className='div__mySkills--title'>
-            <h3>My Skills</h3>
+            <h3 className={classNameH3}>My Skills</h3>
           </div>
-          <div className='divv__mySkills--content'>
+          <div className={classNameMySkillsContent}>
             <div className='div__mySkills--a'></div>
             <div className='div__mySkills--b'>
               <i className='bx bxl-react' style={{ color: '#61dafb' }}  ></i>
