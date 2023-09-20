@@ -1,79 +1,91 @@
-import { useState } from 'react'
+import { useState } from 'react';
 //icons
-import 'boxicons'
+import 'boxicons';
 
 //css
-import './App.css'
+import './App.css';
 
 //components
-import { NavPc } from './components/nav-pc'
-import { DarkMode } from './components/dark-mode'
-
+import { NavPc } from './components/nav-pc';
+import { DarkMode } from './components/dark-mode';
 
 function App() {
+  const [darkModeActive, setDarkModeActive] = useState(false);
 
-  const [darkModeActive, setDarkModeActive] = useState(false)
+  const classNameFirstSection = darkModeActive
+    ? 'app__section dark__mode--firstSection'
+    : 'app__section';
 
-  const classNameFirstSection = darkModeActive ? 'app__section dark__mode--ligth' : 'app__section'
+  const classNameAbout = darkModeActive
+    ? 'app__section--about dark__mode--secondSection'
+    : 'app__section--about';
 
-  const classNameAbout = darkModeActive ? 'app__section--about dark__mode' : 'app__section--about'
+  const classNameProjects = darkModeActive
+    ? 'app__section--projects dark__mode--firstSection'
+    : 'app__section--projects';
 
-  const classNameProjects = darkModeActive ? 'app__section--projects dark__mode--ligth' : 'app__section--projects'
+  const classNameContact = darkModeActive
+    ? 'app_footer dark__mode--secondSection'
+    : 'app_footer';
 
-  const classNameContact = darkModeActive ? 'app_footer dark__mode' : 'app_footer'
+  const classNameMySkillsContent = darkModeActive
+    ? 'div__mySkills--content dark__mode--mySkills-content-on'
+    : 'div__mySkills--content';
 
-  const classNameH1 = darkModeActive ? 'dark__mode--h1-on' : null
+  const classNameContentText = darkModeActive
+    ? 'div__content--text dark__mode--content-text-on'
+    : 'div__content--text';
 
-  const classNameP = darkModeActive ? 'intro-p dark__mode--p-on' : 'intro-p'
+  const classNameContentProject1 = darkModeActive
+    ? 'div__projects--contain project--1 dark__mode--secondSection'
+    : 'div__projects--contain project--1';
 
-  const classNameUl = darkModeActive ? 'div__presentation--ul dark__mode--ul-on' : 'div__presentation--ul'
-
-  const classNameH3 = darkModeActive ? 'dark__mode--h3-on' : null
-
-  const classNameMySkillsContent = darkModeActive ? 'div__mySkills--content dark__mode--mySkills-content-on' : 'div__mySkills--content'
+  const classContactCard = darkModeActive
+    ? 'div__contact--card dark__mode--firstSection'
+    : 'div__contact--card';
 
   return (
     <main className='app__main'>
       <NavPc darkModeActive={darkModeActive} />
       <section id='home' className={classNameFirstSection}>
-        <div className='section__div' >
+        <div className='section__div'>
           <div className='div__presentation'>
-            <h1 className={classNameH1}>
-              Front-End Web Developer.
-            </h1>
-            <p className={classNameP}>Hi, I'm
+            <h1>Front-End Web Developer.</h1>
+            <p>
+              Hi, I'm
               <span className='h1__span--name'> Daniel Mendoza</span>
               .
-              <br />
-              A passionate Developer from Venezuela.
+              <br />A passionate Developer from Venezuela.
             </p>
-            <ul className={classNameUl}>
-              <li><a href="https://www.linkedin.com/in/daniel-mendoza-299a06167">
-                <i className='bx bx-md bxl-linkedin-square'></i>
-              </a></li>
-              <li><a href="https://github.com/damendoz">
-                <i className='bx bx-md bxl-github'></i>
-              </a></li>
+            <ul className='div__presentation--ul'>
+              <li>
+                <a href='https://www.linkedin.com/in/daniel-mendoza-299a06167'>
+                  <i className='bx bx-md bxl-linkedin-square'></i>
+                </a>
+              </li>
+              <li>
+                <a href='https://github.com/damendoz'>
+                  <i className='bx bx-md bxl-github'></i>
+                </a>
+              </li>
             </ul>
           </div>
           <div className='section__div--img'></div>
         </div>
         <div className='section__div--skills'>
           <div className='div__mySkills--title'>
-            <h3 className={classNameH3}>My Skills</h3>
+            <h3>My Skills</h3>
           </div>
           <div className={classNameMySkillsContent}>
             <div className='div__mySkills--a'></div>
             <div className='div__mySkills--b'>
-              <i className='bx bxl-react' style={{ color: '#61dafb' }}  ></i>
+              <i className='bx bxl-react' style={{ color: '#61dafb' }}></i>
             </div>
             <div className='div__mySkills--c'></div>
             <div className='div__mySkills--d'>
-              <i className='bx bxl-css3' style={{ color: '#1720fd' }}  ></i>
+              <i className='bx bxl-css3' style={{ color: '#1720fd' }}></i>
             </div>
             <div className='div__mySkills--e'></div>
-
-
           </div>
         </div>
       </section>
@@ -82,16 +94,18 @@ function App() {
           <h2>About Me</h2>
         </div>
         <div className='section__div--content'>
-          <div className='div__content--text'>
+          <div className={classNameContentText}>
             <div className='div__content--img'></div>
             <h3>An enthusiast Web Developer 💻</h3>
             <p>
-              As a <span>Front-End</span> Developer, I turn <span>ideas</span> into <span>code</span>. I am capable of handling any obstacles,
-              challenges or problems.
-              Being a focused and disciplined person make me a wise choice. Using <span>React/Next</span> for the Frontend,
-              i can able to make attractive, interactive, useful and <span>professional</span> websites.
-              I think being in peace with myself is a very important aspect when it comes to <span>working</span> in an
-              efficient and tidy way.
+              As a <span>Front-End</span> Developer, I turn <span>ideas</span>{' '}
+              into <span>code</span>. I am capable of handling any obstacles,
+              challenges or problems. Being a focused and disciplined person
+              make me a wise choice. Using <span>React/Next</span> for the
+              Frontend, i can able to make attractive, interactive, useful and{' '}
+              <span>professional</span> websites. I think being in peace with
+              myself is a very important aspect when it comes to{' '}
+              <span>working</span> in an efficient and tidy way.
             </p>
           </div>
         </div>
@@ -101,13 +115,16 @@ function App() {
           <h2>Projects</h2>
         </div>
         <div className='div__projects--cards-container'>
-          <div className='div__projects--contain project--1'>
+          <div className={classNameContentProject1}>
             <div className='left'>
               <div className='top'>
-                <h3 className='project--title'>Travel Self-Management System</h3>
+                <h3 className='project--title'>
+                  Travel Self-Management System
+                </h3>
                 <p className='project--description'>
-                  Administrative self-management system for a
-                  company's per diem.</p>
+                  Administrative self-management system for a company's per
+                  diem.
+                </p>
               </div>
               <div className='bottom'>
                 <h3>Tech used</h3>
@@ -120,67 +137,74 @@ function App() {
               </div>
             </div>
             <div className='right'>
-              <a className='img-link'
-                href="https://mendoza-porfolio.netlify.app/"
-                target='_blank' rel='noreferrer'>
+              <a
+                className='img-link'
+                href='https://mendoza-porfolio.netlify.app/'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <div className='img-proyect-1'></div>
               </a>
               <div className='project--links'>
-                <a href="https://mendoza-porfolio.netlify.app/" target="_blank"
-                  rel="noreferrer">
+                <a
+                  href='https://mendoza-porfolio.netlify.app/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <i className='bx bx-sm bx-globe'></i>
                 </a>
-                <a href="https://github.com/damendoz" target="_blank"
-                  rel="noreferrer">
+                <a
+                  href='https://github.com/damendoz'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <i className='bx bx-sm bxl-github'></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <DarkMode darkModeActive={darkModeActive} setDarkModeActive={setDarkModeActive} />
+        <DarkMode
+          darkModeActive={darkModeActive}
+          setDarkModeActive={setDarkModeActive}
+        />
       </section>
       <footer id='contact' className={classNameContact}>
         <div className='footer__div--container'>
           <h2 className='div__h2--title'>Contact</h2>
-          <h3 className='div__h2--subtitle'>If you are intrested in
+          <h3 className='div__h2--subtitle'>
+            If you are intrested in
             <span> hiring</span> me,
-            <span> call</span> me, <span>email</span> me
-            or <span>connect </span>
-            and chat with me via LinkedIn!</h3>
-          <div className='div__contact--card'>
-            <div className='contact__card--link'><a
-              href="tel:+584129042208"
-              rel='noreferrer'
-              target='_blank'
-            >
-              <i className='bx bx-md bxs-phone'></i>
-            </a>
-              <p>
-                +58 412 904 2208
-              </p>
+            <span> call</span> me, <span>email</span> me or{' '}
+            <span>connect </span>
+            and chat with me via LinkedIn!
+          </h3>
+          <div className={classContactCard}>
+            <div className='contact__card--link'>
+              <a href='tel:+584129042208' rel='noreferrer' target='_blank'>
+                <i className='bx bx-md bxs-phone'></i>
+              </a>
+              <p>+58 412 904 2208</p>
             </div>
-            <div className='contact__card--link'><a
-              href="mailto: ing.dan.mendoza@gmail.com"
-              rel='noreferrer'
-              target='_blank'
-            >
-              <i className='bx bx-md bxs-envelope'></i>
-            </a>
-              <p>
-                ing.dan.mendoza@gmail.com
-              </p>
+            <div className='contact__card--link'>
+              <a
+                href='mailto: ing.dan.mendoza@gmail.com'
+                rel='noreferrer'
+                target='_blank'
+              >
+                <i className='bx bx-md bxs-envelope'></i>
+              </a>
+              <p>ing.dan.mendoza@gmail.com</p>
             </div>
-            <div className='contact__card--link'><a
-              href="https://www.linkedin.com/in/daniel-mendoza-299a06167"
-              rel='noreferrer'
-              target='_blank'
-            >
-              <i className='bx bx-md bxl-linkedin-square'></i>
-            </a>
-              <p>
-                Daniel Mendoza
-              </p>
+            <div className='contact__card--link'>
+              <a
+                href='https://www.linkedin.com/in/daniel-mendoza-299a06167'
+                rel='noreferrer'
+                target='_blank'
+              >
+                <i className='bx bx-md bxl-linkedin-square'></i>
+              </a>
+              <p>Daniel Mendoza</p>
             </div>
           </div>
         </div>
@@ -189,7 +213,7 @@ function App() {
         </div>
       </footer>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;

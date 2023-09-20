@@ -335,11 +335,11 @@ h1 {
 }
 
 .bxl-linkedin-square:before {
-  content: "\e94e";
+  content: '\e94e';
 }
 
 .bxl-github:before {
-  content: "\e93a";
+  content: '\e93a';
 }
 
 .bxl-github:hover,
@@ -499,9 +499,8 @@ h1 {
   background-color: var(--bcss);
   transition: 0.5s;
   border-radius: 10px;
-  box-shadow: 0 0 5px var(--bcss),0 0 10px var(--bcss),
-  0 0 15px var(--bcss),0 0 20px var(--bcss),
-   0 0 25px var(--bcss), 0 0 50px var(--bcss),
+  box-shadow: 0 0 5px var(--bcss), 0 0 10px var(--bcss), 0 0 15px var(--bcss),
+    0 0 20px var(--bcss), 0 0 25px var(--bcss), 0 0 50px var(--bcss),
     0 0 200px var(--bcss);
 }
 
@@ -1261,46 +1260,39 @@ a:-webkit-any-link {
 
 /* Dark Mode */
 
-.dark__mode {
-  background-color: #121212;
+.dark__mode--ligth-header {
+  background-color: rgba(18, 18, 18, 0.8);
 }
 
-.dark__mode--ligth {
-  background-color: #131313e1;
+.dark__mode--firstSection,
+.dark__mode--content-text-on {
+  background-color: rgb(46, 46, 46);
 }
 
-.dark__mode--on {
-  background-color: rgba(255, 255, 255, 0.08);
+.dark__mode--firstSection p,
+.dark__mode--firstSection h3,
+.dark__mode--firstSection i {
   color: #fff;
 }
 
-.dark__mode--on li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.dark__mode--of li:hover {
-  background-color: #ddd8d8;
-}
-
-.dark__mode--h1-on {
+.dark__mode--firstSection h1 {
   -webkit-text-fill-color: transparent;
   background: linear-gradient(to right, var(--purple), var(--purple));
   background-clip: text;
   -webkit-background-clip: text;
 }
 
-.dark__mode--p-on {
-  color: #fff;
-}
-
-.dark__mode--ul-on i {
-  color: #fff;
-}
-
-.dark__mode--h3-on {
-  color: #fff;
-}
-
-.dark__mode--mySkills-content-on {
+.dark__mode--mySkills-content-on,
+.dark__mode--secondSection {
   background-color: #121212;
+}
+
+.dark__mode--secondSection p,
+.dark__mode--secondSection h3 {
+  color: #fff;
+}
+
+.dark__mode--on {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
 }
