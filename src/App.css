@@ -486,13 +486,13 @@ h1 {
 }
 
 .div__mySkills--e {
-  background: url(/src/assets/php-logo.jpg);
+  background: url(/src/assets/nodejs.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .div__mySkills--e:hover {
-  background: url(/src/assets/phpwhite.png);
+  background: url(/src/assets/nodejs.png);
   background-repeat: no-repeat;
   background-size: contain;
   --bcss: rgb(24, 49, 83, 1);
@@ -743,9 +743,10 @@ h1 {
     0,
     1fr
   ); /* cuando haya mas proyectos aumentar esto como esta abajo */
-  /* grid-template-rows:
+  grid-template-rows:
     minmax(0, 1fr)
-    minmax(0, 1fr) minmax(0, 1fr); */
+    minmax(0, 1fr);
+  /* minmax(0, 1fr);  */
 }
 
 .div__projects--contain {
@@ -1125,7 +1126,8 @@ a:-webkit-any-link {
   }
 }
 
-.div__h2--subtitle span {
+.div__h2--subtitle span,
+.h1__span--name {
   color: var(--purple);
   font-weight: 700;
 }

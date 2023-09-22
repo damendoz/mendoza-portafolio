@@ -50,12 +50,17 @@ function App() {
       <section id='home' className={classNameFirstSection}>
         <div className='section__div'>
           <div className='div__presentation'>
-            <h1>Front-End Web Developer.</h1>
+            <h1>
+              Full-Stack Web <br />
+              Developer.
+            </h1>
             <p>
               Hi, I'm
               <span className='h1__span--name'> Daniel Mendoza</span>
               .
-              <br />A passionate Developer from Venezuela.
+              <br />A passionate Full-Stack Web Developer
+              <br />
+              from Venezuela.
             </p>
             <ul className='div__presentation--ul'>
               <li>
@@ -102,7 +107,8 @@ function App() {
               into <span>code</span>. I am capable of handling any obstacles,
               challenges or problems. Being a focused and disciplined person
               make me a wise choice. Using <span>React/Next</span> for the
-              Frontend, i can able to make attractive, interactive, useful and{' '}
+              Frontend and Node, Express and SQL/NoSQL databases for the
+              Backend, i can able to make attractive, interactive, useful and{' '}
               <span>professional</span> websites. I think being in peace with
               myself is a very important aspect when it comes to{' '}
               <span>working</span> in an efficient and tidy way.
@@ -119,11 +125,10 @@ function App() {
             <div className='left'>
               <div className='top'>
                 <h3 className='project--title'>
-                  Travel Self-Management System
+                Portfolio
                 </h3>
                 <p className='project--description'>
-                  Administrative self-management system for a company's per
-                  diem.
+                This is the presentation of all my projects.
                 </p>
               </div>
               <div className='bottom'>
@@ -132,7 +137,7 @@ function App() {
                   <div className='skill--1'></div>
                   <div className='skill--2'></div>
                   <div className='skill--3'></div>
-                  <div className='skill--4'></div>
+                  {/* <div className='skill--4'></div> */}
                 </div>
               </div>
             </div>
@@ -154,7 +159,7 @@ function App() {
                   <i className='bx bx-sm bx-globe'></i>
                 </a>
                 <a
-                  href='https://github.com/damendoz'
+                  href='https://github.com/damendoz/mendoza-portafolio'
                   target='_blank'
                   rel='noreferrer'
                 >
