@@ -59,12 +59,12 @@ function App() {
             </p>
             <ul className='div__presentation--ul'>
               <li>
-                <a href='https://www.linkedin.com/in/daniel-mendoza-299a06167'>
+                <a className='div__presentacion--a' href='https://www.linkedin.com/in/daniel-mendoza-299a06167'>
                   <i className='bx bx-md bxl-linkedin-square'></i>
                 </a>
               </li>
               <li>
-                <a href='https://github.com/damendoz'>
+                <a className='div__presentacion--a' href='https://github.com/damendoz'>
                   <i className='bx bx-md bxl-github'></i>
                 </a>
               </li>
@@ -78,13 +78,9 @@ function App() {
           </div>
           <div className={classNameMySkillsContent}>
             <div className='div__mySkills--a'></div>
-            <div className='div__mySkills--b'>
-              <i className='bx bxl-react' style={{ color: '#61dafb' }}></i>
-            </div>
+            <div className='div__mySkills--b'></div>
             <div className='div__mySkills--c'></div>
-            <div className='div__mySkills--d'>
-              <i className='bx bxl-css3' style={{ color: '#1720fd' }}></i>
-            </div>
+            <div className='div__mySkills--d'></div>
             <div className='div__mySkills--e'></div>
           </div>
         </div>
@@ -98,14 +94,18 @@ function App() {
             <div className='div__content--img'></div>
             <h3>An enthusiast Web Developer 💻</h3>
             <p>
-              As a <span>Front-End</span> Developer, I turn <span>ideas</span>{' '}
-              into <span>code</span>. I am capable of handling any obstacles,
-              challenges or problems. Being a focused and disciplined person
-              make me a wise choice. Using <span>React/Next</span> for the
-              Frontend, i can able to make attractive, interactive, useful and{' '}
-              <span>professional</span> websites. I think being in peace with
-              myself is a very important aspect when it comes to{' '}
-              <span>working</span> in an efficient and tidy way.
+              As a <span>Full Stack</span> Developer, I transform <span>ideas</span> into
+              <span> code</span> by seamlessly integrating both the <span>frontend</span> and
+              <span> backend</span> aspects of web development. I adeptly navigate obstacles,
+              challenges, and problems with a focused and disciplined approach, making me a
+              reliable choice for any project. Utilizing <span>React/Next</span> for the
+              frontend, I create attractive, interactive, and professional websites that
+              deliver real value. On the backend, my expertise with <span> Node.js</span> and
+              <span> Python</span> ensures robust, scalable, and efficient solutions that
+              power applications effectively. I believe that maintaining inner peace is
+              crucial for working in an efficient, organized manner, enabling me to
+              consistently deliver high-quality results.
+
             </p>
           </div>
         </div>
@@ -150,6 +150,7 @@ function App() {
                   href='https://mendoza-porfolio.netlify.app/'
                   target='_blank'
                   rel='noreferrer'
+                  className='project--a'
                 >
                   <i className='bx bx-sm bx-globe'></i>
                 </a>
@@ -157,6 +158,7 @@ function App() {
                   href='https://github.com/damendoz'
                   target='_blank'
                   rel='noreferrer'
+                  className='project--a'
                 >
                   <i className='bx bx-sm bxl-github'></i>
                 </a>
@@ -164,10 +166,10 @@ function App() {
             </div>
           </div>
         </div>
-        <DarkMode
+        {/* <DarkMode
           darkModeActive={darkModeActive}
           setDarkModeActive={setDarkModeActive}
-        />
+        /> */}
       </section>
       <footer id='contact' className={classNameContact}>
         <div className='footer__div--container'>
@@ -175,13 +177,16 @@ function App() {
           <h3 className='div__h2--subtitle'>
             If you are intrested in
             <span> hiring</span> me,
-            <span> call</span> me, <span>email</span> me or{' '}
+            <span> call</span> me, <span>email</span> me or
             <span>connect </span>
             and chat with me via LinkedIn!
           </h3>
           <div className={classContactCard}>
             <div className='contact__card--link'>
-              <a href='tel:+584129042208' rel='noreferrer' target='_blank'>
+              <a href='tel:+584129042208'
+                rel='noreferrer'
+                target='_blank'
+                className='contact__card--a'>
                 <i className='bx bx-md bxs-phone'></i>
               </a>
               <p>+58 412 904 2208</p>
@@ -191,6 +196,7 @@ function App() {
                 href='mailto: ing.dan.mendoza@gmail.com'
                 rel='noreferrer'
                 target='_blank'
+                className='contact__card--a'
               >
                 <i className='bx bx-md bxs-envelope'></i>
               </a>
@@ -201,6 +207,7 @@ function App() {
                 href='https://www.linkedin.com/in/daniel-mendoza-299a06167'
                 rel='noreferrer'
                 target='_blank'
+                className='contact__card--a'
               >
                 <i className='bx bx-md bxl-linkedin-square'></i>
               </a>
