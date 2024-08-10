@@ -50,7 +50,7 @@ function App() {
       <section id='home' className={classNameFirstSection}>
         <div className='section__div'>
           <div className='div__presentation'>
-            <h1>Front-End Web Developer.</h1>
+            <h1>Full stack Web Developer.</h1>
             <p>
               Hi, I'm
               <span className='h1__span--name'> Daniel Mendoza</span>

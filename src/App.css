@@ -356,7 +356,6 @@ h1 {
   background-position-y: 50%;
   background-repeat: no-repeat;
   background-size: 100%;
-  border: 3px solid var(--black);
   border-radius: 7rem;
   height: 20rem;
   width: 20rem;
@@ -373,13 +372,6 @@ h1 {
 @media only screen and (max-width: 1139px) {
   .section__div--img {
     margin-bottom: 3rem;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  .section__div--img {
-    height: 18rem;
-    width: 18rem;
   }
 }
 
