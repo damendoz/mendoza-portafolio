@@ -59,12 +59,14 @@ function App() {
             </p>
             <ul className='div__presentation--ul'>
               <li>
-                <a className='div__presentacion--a' href='https://www.linkedin.com/in/daniel-mendoza-299a06167'>
+                <a className='div__presentacion--a' href='https://www.linkedin.com/in/daniel-mendoza-299a06167' rel='noreferrer'
+                  target='_blank'>
                   <i className='bx bx-md bxl-linkedin-square'></i>
                 </a>
               </li>
               <li>
-                <a className='div__presentacion--a' href='https://github.com/damendoz'>
+                <a className='div__presentacion--a' href='https://github.com/damendoz' rel='noreferrer'
+                  target='_blank'>
                   <i className='bx bx-md bxl-github'></i>
                 </a>
               </li>
