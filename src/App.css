@@ -831,10 +831,17 @@ h1 {
   background-size: contain;
 }
 
+.skill--5 {
+  background: url(/src/assets/Postgresql_elephant.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .skill--1,
 .skill--2,
 .skill--3,
-.skill--4 {
+.skill--4,
+.skill--5 {
   height: 2.5rem;
   width: 2.5rem;
 }
@@ -843,7 +850,8 @@ h1 {
   .skill--1,
   .skill--2,
   .skill--3,
-  .skill--4 {
+  .skill--4,
+  .skill--5 {
     height: 1.5rem;
     width: 1.5rem;
   }
@@ -895,7 +903,7 @@ a:-webkit-any-link {
 }
 
 .img-proyect-1 {
-  background: url(/src/assets/projectITBC.PNG);
+  background: url(/src/assets/rendering\ project.png);
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: cover;

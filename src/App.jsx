@@ -8,6 +8,7 @@ import './App.css';
 //components
 import { NavPc } from './components/nav-pc';
 import { DarkMode } from './components/dark-mode';
+import { ProjectsSections } from './components/projects-sections';
 
 function App() {
   const [darkModeActive, setDarkModeActive] = useState(false);
@@ -20,10 +21,6 @@ function App() {
     ? 'app__section--about dark__mode--secondSection'
     : 'app__section--about';
 
-  const classNameProjects = darkModeActive
-    ? 'app__section--projects dark__mode--firstSection'
-    : 'app__section--projects';
-
   const classNameContact = darkModeActive
     ? 'app_footer dark__mode--secondSection'
     : 'app_footer';
@@ -35,10 +32,6 @@ function App() {
   const classNameContentText = darkModeActive
     ? 'div__content--text dark__mode--content-text-on'
     : 'div__content--text';
-
-  const classNameContentProject1 = darkModeActive
-    ? 'div__projects--contain project--1 dark__mode--secondSection'
-    : 'div__projects--contain project--1';
 
   const classContactCard = darkModeActive
     ? 'div__contact--card dark__mode--firstSection'
@@ -112,67 +105,9 @@ function App() {
           </div>
         </div>
       </section>
-      <section id='projects' className={classNameProjects}>
-        <div className='div__projects--title'>
-          <h2>Projects</h2>
-        </div>
-        <div className='div__projects--cards-container'>
-          <div className={classNameContentProject1}>
-            <div className='left'>
-              <div className='top'>
-                <h3 className='project--title'>
-                  Travel Self-Management System
-                </h3>
-                <p className='project--description'>
-                  Administrative self-management system for a company's per
-                  diem.
-                </p>
-              </div>
-              <div className='bottom'>
-                <h3>Tech used</h3>
-                <div className='project--skills'>
-                  <div className='skill--1'></div>
-                  <div className='skill--2'></div>
-                  <div className='skill--3'></div>
-                  <div className='skill--4'></div>
-                </div>
-              </div>
-            </div>
-            <div className='right'>
-              <a
-                className='img-link'
-                href='https://mendoza-porfolio.netlify.app/'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <div className='img-proyect-1'></div>
-              </a>
-              <div className='project--links'>
-                <a
-                  href='https://mendoza-porfolio.netlify.app/'
-                  target='_blank'
-                  rel='noreferrer'
-                  className='project--a'
-                >
-                  <i className='bx bx-sm bx-globe'></i>
-                </a>
-                <a
-                  href='https://github.com/damendoz'
-                  target='_blank'
-                  rel='noreferrer'
-                  className='project--a'
-                >
-                  <i className='bx bx-sm bxl-github'></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <DarkMode
-          darkModeActive={darkModeActive}
-          setDarkModeActive={setDarkModeActive}
-        /> */}
-      </section>
+
+      <ProjectsSections darkModeActive={darkModeActive} />
+
       <footer id='contact' className={classNameContact}>
         <div className='footer__div--container'>
           <h2 className='div__h2--title'>Contact</h2>
