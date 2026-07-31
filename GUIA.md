@@ -8,19 +8,20 @@ revisión real de los 8 repositorios en los que has trabajado (julio de 2026).
 
 ## 1. Antes de publicar — checklist
 
-Busca `EDITAR` en `src/content/perfil.ts`. Son los datos que solo tú conoces:
+Datos personales ya confirmados (jul 2026): correo público `ing.dan.mendoza@gmail.com`,
+LinkedIn enlazado, ubicación "España · Remoto" y la experiencia completa 2021–actualidad
+tomada de tu LinkedIn (ITBC → Pegaso → Saeplus → Coderland → freelance AI Infrastructure).
 
-- [ ] **Correo de contacto**: ahora mismo va `ddeunasolam@gmail.com` (el de tus commits
-      públicos de 2023). Confirma que es el que quieres hacer público.
-- [ ] **LinkedIn**: está a `null` (no se muestra). Pon la URL real — no la he inventado.
-- [ ] **Ubicación**: opcional, a `null`.
-- [ ] **Cargo y fecha de inicio en The Clueless**: he puesto "2025 — actualidad" porque tu
-      primer commit personal verificable es de noviembre de 2025 (`ai-upscaler-api`).
-      Ajusta si empezaste antes.
-- [ ] **Experiencia anterior a The Clueless**: si la hay, añádela al array `experiencia`.
-- [ ] **Permiso de la empresa**: los proyectos son de The Clueless. Antes de publicar,
-      confirma con ellos que puedes describirlos a este nivel (está redactado para ser
-      seguro, pero la confirmación te protege a ti).
+Lo que queda:
+
+- [ ] **Permiso de The Clueless**: los proyectos descritos son suyos y tu relación es de
+      freelance. Antes de publicar, confirma que puedes describirlos a este nivel (está
+      redactado para ser seguro, pero la confirmación te protege a ti).
+- [ ] **Resumen de Coderland**: he puesto una línea genérica basada en el título y las
+      skills de tu LinkedIn; si puedes contar algo concreto (proyectos, stack), amplíala
+      en `src/content/perfil.ts`.
+- [ ] **Enlace destacado de tu LinkedIn**: la entrada de Pegaso enlaza tu portafolio
+      antiguo. Cuando publiques este, actualiza ese enlace destacado (y la URL de la bio).
 
 ## 2. Reglas de confidencialidad que sigue el contenido
 
