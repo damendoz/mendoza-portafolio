@@ -1,35 +1,40 @@
-# React + Vite
+# Portafolio — Daniel Mendoza Arreaza
 
-Available Scripts
-In the project directory, you can run:
+Portafolio profesional construido con **Next.js 15 (App Router) + TypeScript + Tailwind CSS 4**,
+exportado como sitio estático (`output: "export"`): se puede servir desde Vercel, GitHub Pages,
+Netlify o cualquier hosting de ficheros.
 
-npm install
+> **Antes de publicar, lee [`GUIA.md`](GUIA.md)**: contiene el checklist de datos personales
+> pendientes de confirmar y las reglas de confidencialidad que sigue el contenido.
 
-npm run dev
-Runs the app in the development mode.
-Open http://localhost:5173 to view it in your browser.
+## Comandos
 
-The page will reload when you make changes.
-You may also see any lint errors in the console.
+```bash
+npm install      # dependencias
+npm run dev      # desarrollo en http://localhost:3000
+npm run build    # build de producción + export estático en out/
+npm run lint     # ESLint
+```
 
-npm test
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
+## Dónde se edita cada cosa
 
-npm run build
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Todo el contenido vive separado del código de la web:
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+```
+src/content/perfil.ts      nombre, titular, intro, enlaces, experiencia, stack
+src/content/proyectos.ts   las fichas de proyectos (destacados y parrilla)
+src/content/tipos.ts       tipos del contenido (añade campos aquí si los necesitas)
+```
 
-See the section about deployment for more information.
+Para cambiar textos, añadir un proyecto o reordenar el stack **no hace falta tocar ningún
+componente**: edita los ficheros de `src/content/` y ya. Los componentes de la web están en
+`src/components/` y el tema (colores, tipografías) en `src/app/globals.css`.
 
-npm run eject
-Note: this is a one-way operation. Once you eject, you can't go back!
+## Despliegue
 
-If you aren't satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+**Vercel (recomendado):** importa el repo en [vercel.com](https://vercel.com), framework
+Next.js, sin configuración extra. Cada push a `main` despliega.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**GitHub Pages:** el build genera `out/` estático. Si lo sirves bajo
+`usuario.github.io/mendoza-portafolio` (subruta), añade `basePath: "/mendoza-portafolio"`
+en `next.config.ts`; con dominio propio no hace falta.
