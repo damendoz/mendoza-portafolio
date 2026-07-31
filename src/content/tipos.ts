@@ -32,6 +32,8 @@ export interface Experiencia {
   organizacion: string;
   rol: string;
   periodo: string;
+  /** Ej. "Madrid · Remoto". Opcional. */
+  lugar?: string;
   resumen: string;
 }
 

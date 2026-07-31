@@ -10,7 +10,10 @@ export function Experiencia() {
             key={`${puesto.organizacion}-${puesto.periodo}`}
             className="grid gap-2 md:grid-cols-[180px_1fr] md:gap-8"
           >
-            <span className="font-mono text-sm text-tinta-tenue">{puesto.periodo}</span>
+            <div className="font-mono text-sm text-tinta-tenue">
+              <p>{puesto.periodo}</p>
+              {puesto.lugar && <p className="mt-1 text-xs">{puesto.lugar}</p>}
+            </div>
             <div>
               <h3 className="text-lg font-semibold tracking-tight">
                 {puesto.rol}
