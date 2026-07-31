@@ -21,7 +21,7 @@ export const proyectos: Proyecto[] = [
     estado: "produccion",
     destacado: true,
     contexto:
-      "La plataforma multi-producto de The Clueless: un Studio de generación de imagen, vídeo, audio y texto, un Playground de nodos, el agente embebido Quill y una Developer API pública (REST + servidor MCP) con facturación por uso. Auth, suscripciones, créditos y biblioteca de resultados en un solo producto.",
+      "La plataforma multi-producto de The Clueless, nacida como evolución de Vellum (el upscaler) hacia una suite completa: un Studio de generación de imagen, vídeo, audio y texto, un Playground de nodos, el agente embebido Quill y una Developer API pública (REST + servidor MCP) con facturación por uso. Auth, suscripciones, créditos y biblioteca de resultados en un solo producto.",
     aporte: [
       "Arquitectura Next.js 15 + tRPC + Drizzle/Postgres: 27 páginas, 37 endpoints y 22 tablas en producción.",
       "Billing de doble plano: créditos de suscripción y monedero prepago en micro-USD enteros, con débito antes de crear, refund en fallo y liquidación idempotente.",
@@ -29,6 +29,7 @@ export const proyectos: Proyecto[] = [
       "Servidor MCP con OAuth que expone los modelos de la suite como herramientas para clientes externos, reutilizando el auth y el billing del gateway.",
       "Agente Quill sobre Claude: streaming SSE, herramientas in-process que debitan al usuario logueado y facturación de tokens con el mismo motor de precios que el resto del producto.",
       "Auditoría de seguridad pre-producción propia, con cierre verificado de hallazgos (webhooks de Stripe idempotentes, protección SSRF, redirects seguros) antes del go-live.",
+      "Relevo de Vellum sin dejar a nadie atrás: runbook de migración del dominio y de la base de suscriptores de pago al nuevo sistema de planes.",
     ],
     stack: [
       "Next.js 15",
@@ -51,12 +52,13 @@ export const proyectos: Proyecto[] = [
     id: "vellum-upscaler",
     nombre: "Vellum — Upscaling con IA",
     claim:
-      "Producto público de upscaling y retoque de imagen sobre GPUs serverless, con créditos y suscripciones",
+      "El producto de upscaling que dio origen a la Suite: GPUs serverless, créditos y suscripciones",
     periodo: "2025 — 2026",
-    estado: "produccion",
+    estado: "legado",
+    estadoEtiqueta: "Hoy parte de la Suite",
     destacado: true,
     contexto:
-      "El producto de mejora de imagen de The Clueless: un frontend Next.js y un API gateway en Node que orquesta workflows de ComfyUI en GPUs serverless (RunPod), con sistema de créditos, suscripciones Stripe, progreso en tiempo real y una API multi-tenant para integradores.",
+      "El producto de mejora de imagen de The Clueless y el punto de partida de lo que hoy es la AI Suite: un frontend Next.js y un API gateway en Node que orquesta workflows de ComfyUI en GPUs serverless (RunPod), con sistema de créditos, suscripciones Stripe, progreso en tiempo real y una API multi-tenant para integradores. Como web independiente ya no está disponible: el producto evolucionó y quedó integrado en la Suite, que heredó su dominio y sus suscriptores.",
     aporte: [
       "Base fundacional del backend (primeros commits del repo): autenticación JWT con refresh y OAuth de Google, sistema de créditos, suscripciones y webhooks de Stripe, historial y galería por usuario.",
       "Orquestación de trabajos GPU: colas BullMQ sobre Redis, webhook + polling de respaldo y un cron que rescata trabajos huérfanos.",

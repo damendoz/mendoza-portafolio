@@ -8,14 +8,15 @@ const ESTADOS: Record<EstadoProyecto, { texto: string; clase: string }> = {
   piloto: { texto: "Piloto", clase: "text-amber-300" },
   interno: { texto: "Uso interno", clase: "text-sky-300" },
   desarrollo: { texto: "En desarrollo", clase: "text-zinc-400" },
+  legado: { texto: "Legado", clase: "text-violet-300" },
 };
 
-function Estado({ estado }: { estado: EstadoProyecto }) {
+function Estado({ estado, etiqueta }: { estado: EstadoProyecto; etiqueta?: string }) {
   const { texto, clase } = ESTADOS[estado];
   return (
     <span className={`inline-flex items-center gap-1.5 font-mono text-xs ${clase}`}>
       <span className="h-1.5 w-1.5 rounded-full bg-current" aria-hidden="true" />
-      {texto}
+      {etiqueta ?? texto}
     </span>
   );
 }
@@ -67,7 +68,7 @@ function ProyectoDestacado({ proyecto }: { proyecto: Proyecto }) {
   return (
     <article className="rounded-2xl border border-borde bg-panel p-6 md:p-8">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <Estado estado={proyecto.estado} />
+        <Estado estado={proyecto.estado} etiqueta={proyecto.estadoEtiqueta} />
         <span className="font-mono text-xs text-tinta-tenue">{proyecto.periodo}</span>
       </div>
       <h3 className="mt-4 text-xl font-semibold tracking-tight md:text-2xl">
@@ -100,7 +101,7 @@ function ProyectoMenor({ proyecto }: { proyecto: Proyecto }) {
   return (
     <article className="flex flex-col rounded-2xl border border-borde bg-panel p-6">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <Estado estado={proyecto.estado} />
+        <Estado estado={proyecto.estado} etiqueta={proyecto.estadoEtiqueta} />
         <span className="font-mono text-xs text-tinta-tenue">{proyecto.periodo}</span>
       </div>
       <h3 className="mt-3 text-lg font-semibold tracking-tight">{proyecto.nombre}</h3>

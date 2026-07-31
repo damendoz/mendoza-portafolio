@@ -1,7 +1,13 @@
 // Tipos del contenido del portafolio.
 // El contenido real vive en perfil.ts y proyectos.ts — edita allí, no en los componentes.
 
-export type EstadoProyecto = "produccion" | "piloto" | "interno" | "desarrollo";
+export type EstadoProyecto =
+  | "produccion"
+  | "piloto"
+  | "interno"
+  | "desarrollo"
+  /** Ya no existe como producto independiente (p. ej. absorbido por otro). */
+  | "legado";
 
 export interface EnlaceProyecto {
   url: string;
@@ -16,6 +22,9 @@ export interface Proyecto {
   /** Ej. "2025 — 2026". Sale del historial real de git. */
   periodo: string;
   estado: EstadoProyecto;
+  /** Texto del chip de estado si el genérico no cuenta la historia
+   *  (p. ej. "Hoy parte de la Suite" en vez de "Legado"). */
+  estadoEtiqueta?: string;
   /** Los destacados se muestran en grande, el resto en la parrilla. */
   destacado: boolean;
   /** Qué es y qué problema resuelve. Sin humo: solo lo que hace de verdad. */
